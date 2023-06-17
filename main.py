@@ -7,6 +7,7 @@ import urllib.request
 from flask import Flask, request, url_for
 import random
 import os
+import render 
 
 messages = []
 
@@ -23,8 +24,8 @@ def call():
   args = request.args
   number = args.get("num", default="9619199593", type=str)
   
-  account_sid = os.getenv('ACCOUNT_SID')
-  auth_token = os.getenv('AUTH_TOKEN')
+  account_sid = render.secret('ACCOUNT_SID')
+  auth_token = render.secret('AUTH_TOKEN')
   client = Client(account_sid, auth_token)
 
   record_url = 'https:' + url_for("record", _external=True).split(':')[1]
@@ -102,7 +103,7 @@ def transcribe(recording_url):
   except:
     return None
 
-  openai.api_key = os.getenv('OPENAI_API')
+  openai.api_key = render.secret('OPENAI_API')
 
   audio_file = open(hash + ".wav", "rb")
   transcript = openai.Audio.transcribe("whisper-1", audio_file)
