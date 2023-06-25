@@ -1,4 +1,4 @@
-from flask import Flask, request, url_for
+from flask import Flask, request, url_for ,render_template , redirect
 from twilio.twiml.voice_response import Gather, VoiceResponse
 from twilio.rest import Client
 import openai
@@ -84,9 +84,9 @@ def index():
     Returns:
         str: A greeting message.
     """
-    return 'Hello, I am your Saarthi!'
+    return render_template('index.html')
 
-@app.route("/call")
+@app.route("/call", methods=['GET', 'POST'])
 def call():
     """
     Endpoint to initiate a phone call.
@@ -94,9 +94,18 @@ def call():
     Returns:
         str: A response message indicating the call has been initiated.
     """
-    number = request.args.get("num", default="9619199593", type=str)
-    saarthi_app.make_call(number)
-    return 'OK', 200
+    if request.method == 'POST':
+        try:
+            number = request.form.get("number")
+            saarthi_app.make_call(number)
+            return redirect(url_for('call', message='Call initiated successfully!'))
+        except Exception as e:
+            return redirect(url_for('call', message='Sorry! We are unable to initialize the call. Try Verifying the number on Twilio.'))
+    
+    message = request.args.get('message')
+    return render_template('call.html', message=message)
+
+
 
 @app.route("/record", methods=['GET', 'POST'])
 def record():

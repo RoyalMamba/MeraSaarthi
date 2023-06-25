@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Connect with SAARTHI</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Let's Connect with SAARTHI</h1>
+
+    <form action="/call" method="POST">
+      <label for="number">Phone Number:</label>
+      <input type="text" id="number" name="number" required>
+      <button class="btn" type="submit">Call</button>
+    </form>
+
+    {% if message %}
+      <p class="message {% if message == 'Call initiated successfully!' %}success{% else %}error{% endif %}">{{ message }}</p>
+    {% endif %}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c97713;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffffe1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .highlight {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .code {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .btn {
+      font-size: 14px;
+    }
+  }
+  
+  /* Additional styles for call.html */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .error {
+    color: red;
+  }
+
+  /* .social-links {
+    display: flex;
+    align-items: right;
+  } */
+
+  .social-links a {
+    margin-right: 8px; /* Adjust the value to set the desired space between icons */
+  }
+  
