@@ -5,6 +5,7 @@ import openai
 import urllib.request
 import random
 import os
+from langdetect import detect
 
 app = Flask(__name__)
 
@@ -148,7 +149,10 @@ def handle_recording():
 
     response = VoiceResponse()
     gather = Gather(action='/record', method='GET')
-    gather.say(result_text)
+    if detect(result_text) == 'hi':
+      gather.say(result_text, language='hi-IN')
+    else:
+      gather.say(result_text)
     response.append(gather)
     response.redirect(url_for("record"), method='POST')
     return str(response)

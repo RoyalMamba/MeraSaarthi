@@ -2,3 +2,4 @@ twilio
 openai
 flask
 gunicorn
+langdetect
