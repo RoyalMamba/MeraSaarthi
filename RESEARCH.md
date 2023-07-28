@@ -1,6 +1,6 @@
 # Research Paper: Saarthi - Voice Assistant over IVR for Information Retrieval
 
-**Abstract:**
+## Abstract:
 Saarthi is a powerful Flask application that serves as a voice assistant and chatbot, enabling interactive voice-based information retrieval through an IVR system. The project's inception came from a personal experience during a train commute, where the absence of internet connectivity in certain areas highlighted the challenge of accessing information on-the-go. This raised concerns about how individuals living in remote or low-connectivity regions could conveniently obtain real-time and factual information.
 
 In response to this challenge, Saarthi was developed to bridge the gap between information and people, particularly in areas with limited internet access. By leveraging OpenAI's ChatGPT API and Twilio's communication platform, Saarthi allows users to call an IVR number and engage in natural voice-based conversations to obtain relevant and contextual information. The system's adaptability and customization options make it suitable for various applications, ranging from weather updates to emergency assistance and historical facts.
@@ -9,19 +9,19 @@ This research paper presents the technical architecture, implementation methodol
 
 # Table of Contents
 
-### 1. [Introduction](#introduction)
+### 1. [Introduction](#1-introduction-1)
   - 1.1 [Background and Motivation](#11-background-and-motivation)
   - 1.2 [Objectives of the Research](#12-objectives-of-the-research)
   - 1.3 [Importance of Information Retrieval in Voice-based Applications](#13-importance-of-information-retrieval-in-voice-based-applications)
 
-### 2. [Literature Review](#literature-review)
+### 2. [Literature Review](#2-literature-review-1)
   - 2.1 [Voice Assistants and IVR Systems](#21-voice-assistants-and-ivr-systems)
   - 2.2 [Information Retrieval with Chatbot Technology](#22-information-retrieval-with-chatbot-technology)
   - 2.3 [The Role of Speech-to-Text Transcription in IVR Applications](#23-the-role-of-speech-to-text-transcription-in-ivr-applications)
   - 2.4 [OpenAI's ChatGPT or BARD's API and its Applications](#24-openais-chatgpt-or-bards-api-and-its-applications)
   - 2.5 [Twilio's Communication Platform and its Integration with IVR Systems](#25-twilios-communication-platform-and-its-integration-with-ivr-systems)
 
-### 3. [Methodology](#methodology)
+### 3. [Methodology](#3-methodology-1)
   - 3.1 [Technical Architecture of Saarthi](#31-technical-architecture-of-saarthi)
   - 3.2 [Implementation of Flask Application](#32-implementation-of-flask-application)
   - 3.3 [Integration of Speech-to-Text Transcription Services](#33-integration-of-speech-to-text-transcription-services)
@@ -30,7 +30,7 @@ This research paper presents the technical architecture, implementation methodol
   - 3.6 [Deployment and Configuration for IVR Information Retrieval](#36-deployment-and-configuration-for-ivr-information-retrieval)
   - Note: The current implementation of Saarthi includes a simplified version...
 
-### 4. [Features and Capabilities](#features-and-capabilities)
+### 4. [Features and Capabilities](#4-features-and-capabilities-1)
   - 4.1 [IVR-based Information Retrieval](#41-ivr-based-information-retrieval)
   - 4.2 [Real-time Query Handling](#42-real-time-query-handling)
   - 4.3 [Contextual and Relevant Responses](#43-contextual-and-relevant-responses)
@@ -42,25 +42,25 @@ This research paper presents the technical architecture, implementation methodol
   - 4.9 [User Interaction Flexibility](#49-user-interaction-flexibility)
   - 4.10 [Potential for Scalability and Integration](#410-potential-for-scalability-and-integration)
 
-### 5. [Results and Evaluation](#results-and-evaluation)
+### 5. [Results and Evaluation](#5-results-and-evaluation-1)
   - 5.1 [Performance Evaluation of Speech-to-Text Transcription](#51-performance-evaluation-of-speech-to-text-transcription)
   - 5.2 [Accuracy and Contextual Relevance of ChatGPT API Responses](#52-accuracy-and-contextual-relevance-of-chatgpt-api-responses)
   - 5.3 [User Feedback and Satisfaction with Information Retrieval](#53-user-feedback-and-satisfaction-with-information-retrieval)
   - 5.4 [Real-world Use Cases and Success Stories](#54-real-world-use-cases-and-success-stories)
   - 5.5 [Enhancements for User Engagement](#55-enhancements-for-user-engagement)
 
-### 6. [Pros and Cons](#pros-and-cons)
+### 6. [Pros and Cons](#6-pros-and-cons-1)
   - 6.1 [Advantages of Saarthi in IVR-based Information Retrieval](#61-advantages-of-saarthi-in-ivr-based-information-retrieval)
   - 6.2 [Limitations and Challenges Faced in IVR Systems](#62-limitations-and-challenges-faced-in-ivr-systems)
 
-### 7. [Conclusion](#conclusion)
+### 7. [Conclusion](#7-conclusion-1)
   - 7.1 [Summary of Findings and Achievements](#71-summary-of-findings-and-achievements)
   - 7.2 [Significance of Saarthi in IVR Information Retrieval](#72-significance-of-saarthi-in-ivr-information-retrieval)
   - 7.3 [Future Scope and Enhancements](#73-future-scope-and-enhancements)
 
-### 8. [Recommendations and Future Work](#recommendations-and-future-work)
+### 8. [Recommendations and Future Work](#8-recommendations-and-future-work-1)
 
-### 9. [Appendices](#appendices)
+### 9. [Appendices](#9-appendices-1)
   - 9.1 [Code Snippets for Flask Application Setup](#91-code-snippets-for-flask-application-setup)
   - 9.2 [Customization Examples for Voice Prompts](#92-customization-examples-for-voice-prompts)
   - 9.3 [Sample Conversations in Different Use Cases](#93-sample-conversations-in-different-use-cases)
@@ -70,6 +70,7 @@ This research paper presents the technical architecture, implementation methodol
 
 The research paper focuses on the core topic of Saarthi, which is providing efficient and accurate information retrieval through IVR-based voice interactions. It explores the technical implementation of Saarthi, including the integration of speech-to-text transcription, the ChatGPT API, and Twilio. The paper presents the results and evaluation of the system's performance, user feedback, and real-world use cases. It discusses the advantages and challenges of IVR-based information retrieval and proposes future enhancements to Saarthi for further improvements in voice-based information retrieval.
 
+---
 
 ## 1. Introduction
 
@@ -82,6 +83,8 @@ That's when it hit us! If we face connectivity issues in a metropolitan city, wh
 That 'aha' moment was the birth of Saarthi - a bright idea to use the power of modern language technology, like ChatGPT and BARD, with a simple phone call! Imagine calling a number and chatting with a helpful assistant, just like talking to a friend. You can ask about real-time stuff, like the weather in Tawang, or dive into history to find out what happened years ago.
 
 The motivation behind Saarthi is simple - we wanted to break the barriers of internet dependency and bring valuable information to everyone, no matter where they are. Our goal is to create a buddy who can answer your questions, even in places where internet signals play hide-and-seek.
+
+---
 
 ### 1.2 Objectives of the Research
 
@@ -97,6 +100,8 @@ d. We promise to be quick on our feet! You ask a question, and we'll reply in a 
 
 e. We know everyone is unique, so we're making sure you can customize Saarthi. Pick the voice and responses that match your style and needs.
 
+---
+
 ### 1.3 Importance of Information Retrieval in Voice-based Applications
 
 Let's face it - information is like a treasure trove. And we believe that everyone, no matter where they live, should have easy access to it. That's where Saarthi comes to the rescue!
@@ -109,7 +114,7 @@ With Saarthi's help, we're putting the power of knowledge in your hands. So, whe
 
 Join us on this exciting journey as we unlock the magic of voice-based interactions and bring the joy of easy information access to everyone!
 
-
+---
 
 ## 2. Literature Review
 
@@ -359,9 +364,13 @@ While Saarthi exhibits several advantages in IVR-based information retrieval, it
 
 The journey of developing Saarthi, a powerful IVR-based information retrieval system, has been a profound exploration into the realm of voice assistants and chatbot technology. Through the integration of Flask, OpenAI's ChatGPT API, and Twilio, Saarthi has emerged as a reliable and accessible voice assistant capable of engaging in dynamic and contextually relevant conversations with users. The project's core objective was to create a platform that enables users to retrieve information effortlessly through phone calls, bridging the gap between information and internet access.
 
+---
+
 ### 7.2 Significance of Saarthi in IVR Information Retrieval
 
 Saarthi's significance lies in its potential to empower and enrich the lives of individuals who lack internet access or face limited connectivity. By providing a voice-based interface for information retrieval, Saarthi reaches marginalized sections of society who may not be smartphone-literate but are familiar with dialing a number through a feature phone. This is particularly crucial for farmers, rural communities, and other individuals in remote regions who seek essential information about weather updates, agricultural practices, and emergency situations. Saarthi's multilingual support further ensures inclusivity, allowing users to interact in their native language and receive information in a familiar and understandable manner.
+
+---
 
 ### 7.3 Future Scope and Enhancements
 
@@ -438,6 +447,8 @@ class SaarthiApp:
 saarthi_app = SaarthiApp()
 ```
 
+---
+
 ### 9.2 Customization Examples for Voice Prompts:
 
 You can easily customize the voice prompts by modifying the respective TwiML responses in the `main.py` file. Here are some examples:
@@ -454,8 +465,25 @@ def record():
     # Custom voice prompt before recording
     response.say("Please leave a message after the beep.")
     response.record(action='/handle-recording', finish_on_key='*')
-    return str(response)
+    return str(response)  
 ```
+
+In order to tweak the responses over the Saarthi, you can modify the prompt of CHAT completions:
+
+```python
+    transcription_text = transcription["text"] + " Create a very short answer that uses a minimum of 25 completion_tokens and a maximum of 100 completion_tokens"
+    saarthi_app.messages.append({"role": "user", "content": transcription_text})
+
+    result = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=saarthi_app.messages)
+    result_text = result['choices'][0]['message']['content']
+
+    saarthi_app.messages.append({
+        "role": "assistant",
+        "content": result_text
+    })
+```
+
+---
 
 ### 9.3 Sample Conversations in Different Use Cases:
 
@@ -464,7 +492,8 @@ Below are some sample conversations that demonstrate Saarthi's capabilities in h
 *Use Case 1: Weather Information*
 User: "What's the weather like in Mumbai today?"
 
-Saarthi: "The weather in Mumbai today is partly cloudy with a maximum temperature of 32 degrees Celsius."
+Saarthi: "The weather in Mumbai today is partly cloudy with a maximum temperature of 32 degrees Celsius."  
+**(Possible through BARD's realtime response integration)**
 
 *Use Case 2: Recipe Request*
 User: "How do I make a paneer tikka masala?"
@@ -475,6 +504,8 @@ Saarthi: "To make paneer tikka masala, marinate paneer cubes in yogurt and spice
 User: "Tell me about the history of the Taj Mahal."
 
 Saarthi: "The Taj Mahal is a majestic white marble mausoleum located in Agra, India. It was built by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Construction started in 1632 and was completed in 1653. The Taj Mahal is renowned for its exquisite architecture and is a UNESCO World Heritage Site."
+
+---
 
 ### 9.4 IVR Configuration Details:
 
@@ -487,6 +518,8 @@ Using Saarthi for IVR-based information retrieval is straightforward. Follow the
 5. Start the Flask application using the `python main.py` command.
 6. Configure your Twilio phone number's voice URL to point to the deployed URL or ngrok URL followed by `/call`.
 7. Users can call the Twilio phone number and interact with Saarthi by speaking.
+
+---
 
 ### 9.5 Future Enhancements:
 
