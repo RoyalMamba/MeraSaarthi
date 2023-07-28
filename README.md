@@ -73,3 +73,6 @@ Contributions to Saarthi are welcome! If you encounter any issues or have sugges
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## References
+For more details about the research and development of Saarthi, refer to the [RESEARCH](RESEARCH.md) file.
