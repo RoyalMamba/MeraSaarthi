@@ -1,10 +1,8 @@
-# Research Paper: Saarthi - Voice Assistant over IVR for Information Retrieval
-
+# Research Paper Draft 01: Saarthi - Voice Assistant over IVR for Information Retrieval
+### Skeletal representation
 ## Abstract:
-Saarthi is a powerful Flask application that serves as a voice assistant and chatbot, enabling interactive voice-based information retrieval through an IVR system. The project's inception came from a personal experience during a train commute, where the absence of internet connectivity in certain areas highlighted the challenge of accessing information on-the-go. This raised concerns about how individuals living in remote or low-connectivity regions could conveniently obtain real-time and factual information.
-
+Saarthi is a powerful IVR application that serves as a voice assistant and chatbot, enabling interactive voice-based information retrieval through an IVR system. The project's inception came from a personal experience during a train commute, where the absence of internet connectivity in certain areas highlighted the challenge of accessing information on-the-go. This raised concerns about how individuals living in remote or low-connectivity regions could conveniently obtain real-time and factual information.
 In response to this challenge, Saarthi was developed to bridge the gap between information and people, particularly in areas with limited internet access. By leveraging OpenAI's ChatGPT API and Twilio's communication platform, Saarthi allows users to call an IVR number and engage in natural voice-based conversations to obtain relevant and contextual information. The system's adaptability and customization options make it suitable for various applications, ranging from weather updates to emergency assistance and historical facts.
-
 This research paper presents the technical architecture, implementation methodology, and results of Saarthi, highlighting its features, capabilities, and potential for scalability. Additionally, it discusses the advantages of IVR-based information retrieval, the role of speech-to-text transcription, and the significance of Saarthi in providing accessibility to valuable information for diverse user groups.
 
 # Table of Contents
