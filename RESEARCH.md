@@ -1,4 +1,4 @@
-# Research Paper Draft 01: Saarthi - Voice Assistant over IVR for Information Retrieval
+# Research Scope Document Draft 01: Saarthi - Voice Assistant over IVR for Information Retrieval
 ### Skeletal representation
 ## Abstract:
 Saarthi is a powerful IVR application that serves as a voice assistant and chatbot, enabling interactive voice-based information retrieval through an IVR system. The project's inception came from a personal experience during a train commute, where the absence of internet connectivity in certain areas highlighted the challenge of accessing information on-the-go. This raised concerns about how individuals living in remote or low-connectivity regions could conveniently obtain real-time and factual information.
@@ -88,7 +88,7 @@ The motivation behind Saarthi is simple - we wanted to break the barriers of int
 
 So, what are we aiming for with Saarthi? Let's break it down:
 
-a. We're building a smart and friendly web app with a special talent - it can handle phone calls and talk to you like a pro!
+a. We're building a smart and friendly ivr application with a special talent - it can handle phone calls and talk to you like a pro!
 
 b. We're using fancy speech-to-text technology to understand what you say. No worries, we'll convert your voice into text, so we get what you mean.
 
